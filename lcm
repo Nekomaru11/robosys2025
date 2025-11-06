@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+import sys
+import math
+
+nums = []
+
+for line in sys.stdin:
+    try:
+        n = int(line.strip())
+        nums.append(n)
+    except ValueError:
+        print(f"エラー: 数値でない入力があります → {line}", file=sys.stderr)
+        sys.exit(1)
+
+if len(nums) != 2:
+    print("エラー: 入力は2つの整数である必要があります。", file=sys.stderr)
+    sys.exit(1)
+
+a, b = nums
+lcm_value = abs(a * b) // math.gcd(a, b)
+
+print(lcm_value)
+
