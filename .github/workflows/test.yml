@@ -5,7 +5,7 @@ jobs:             # jobs: 実行したい処理（ジョブ）のリスト
     runs-on: ubuntu-latest   # 実行環境（GitHubが用意するUbuntu仮想マシン）
     strategy:
       matrix:
-        python-version:["3.7","3.8","3.9","3.10"]
+        python-version: ["3.7","3.8","3.9","3.10"]
     steps:                   # ジョブの中で行う手続き
       - uses: actions/checkout@v3  # ソースコードを取得する（必須）
       - name: All test             # このステップの名前
