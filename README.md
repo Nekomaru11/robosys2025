@@ -67,6 +67,6 @@ OK
 
 ## ライセンス
 
-- Copyright (c) 2025 Nekomaru11詳細は 
+- Copyright (c) 2025 Nekomaru11
 - 本ソフトウェアは BSD 3-Clause License のもとで公開されています。
-- LICENSE ファイルを参照してください。
+- 詳細はLICENSE ファイルを参照してください。
