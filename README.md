@@ -18,33 +18,21 @@
 
 ## インストール方法
 
-以下のコマンドでリポジトリを取得します。
-
 ```bash
 git clone https://github.com/Nekomaru11/robosys2025.git
 cd robosys2025
+chmod +x 
 
-必要に応じて、実行権限を付与してください
-chmod +x lcm
-
-使い方
+## 使い方
 echo -e "6\n8" | ./lcm
 
-
 出力例：
-
 24
 
-
-ファイルから入力する場合：
-
+ファイルから入力する場合；
 cat numbers.txt | ./lcm
 
-
-※ numbers.txt には 2 行で整数を記載してください。
-
-エラー処理
-
+## エラー処理
 以下の場合、エラーメッセージを標準エラー出力（stderr）に表示し、
 異常終了します。
 
@@ -52,33 +40,26 @@ cat numbers.txt | ./lcm
 
 数値以外が入力された場合
 
-テスト
-
-自動テストは GitHub Actions により実行されています。
-
-ローカル環境では、以下のコマンドでテストを実行できます。
-
+## テスト方法
 bash test.bash
 
-
 成功時の表示例：
-
 OK
 
-動作環境
+## 動作環境
 
 Ubuntu（GitHub Actions の ubuntu-latest）
 
 Python 3.7 ～ 3.10
 
-ライセンス
+##ライセンス
 
 Copyright (c) 2025 Nekomaru11
 
 本ソフトウェアは BSD 3-Clause License のもとで公開されています。
 詳細は LICENSE ファイルを参照してください。
 
-謝辞
+##謝辞
 
 本リポジトリの作成にあたり、千葉工業大学「ロボットシステム学」の
 講義資料を参考にしました。関係者の皆様に感謝いたします。
