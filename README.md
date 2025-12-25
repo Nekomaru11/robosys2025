@@ -10,9 +10,11 @@ lcm コマンドは、標準入力から 2 つの整数を読み込み、 それ
 
 ### インストール方法
 
+```bash
 git clone https://github.com/Nekomaru11/robosys2025.git
 cd robosys2025
 chmod +x lcm
+```
 
 ## 使い方
 
